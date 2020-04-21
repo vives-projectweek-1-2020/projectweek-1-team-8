@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello world</h1>
+    <h1 id="title" >reading from database...</h1>
     <?php
             if(isset($_GET['poll'])){
                 echo $_GET['poll']+1;
@@ -18,11 +19,9 @@
             var value = 0;
             function poll(){
                 setTimeout(function(){
-                    $.ajax({ url: "./test.php?poll="+value,cache: false,
-                    success: function(data){
+                    $.ajax({ url: "./test.php?poll="+value, cache: false, success: function(data){
                         value = data;
-                        $("#ob").html('example: '+value);
-                        //Next poll
+                        $("#ob").html(value);
                         poll();
                     }});
                 }, 1000);

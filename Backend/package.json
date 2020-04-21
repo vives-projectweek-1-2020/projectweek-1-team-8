@@ -1,0 +1,23 @@
+{
+  "name": "projectweek-1-team-8",
+  "version": "1.0.0",
+  "description": "Make an app/website to track how many people are in or near a particular shop at a time. So people can wait at home until the shop has less visitors. This prevents long queues and a potential spread of the virus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vives-projectweek-1-2020/projectweek-1-team-8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vives-projectweek-1-2020/projectweek-1-team-8/issues"
+  },
+  "homepage": "https://github.com/vives-projectweek-1-2020/projectweek-1-team-8#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

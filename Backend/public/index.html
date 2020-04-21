@@ -7,5 +7,24 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <div id="app">
+        <h2>{{product}} are in stock</h2>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                product: []
+            },
+            created(){
+                fetch('https://web0125.zxcs.be/phpmyadmin')
+                .then(response => response.json())
+                .then(json =>{
+                    this.product = json.products
+                })
+            }
+        })
+    </script>
 </body>
 </html>

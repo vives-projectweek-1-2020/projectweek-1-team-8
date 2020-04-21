@@ -15,8 +15,8 @@ city VARCHAR(32),
 state VARCHAR(32),
 postalcode INT(4),
 country VARCHAR(32),
-shop_id INT(11),
-user_email INT(11)
+FOREIGN KEY(shop_id) REFERENCES shop(shop_id),
+FOREIGN KEY(user_email) REFERENCES user(user_email)
 );
 
 CREATE TABLE shop (

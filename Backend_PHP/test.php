@@ -17,9 +17,10 @@
     if ($result->num_rows > 0) {
         // output data of each row
         echo "<table>";
+        echo "<tr> <th>First name</th> <th>Last name</th> <th>Index</th> </tr>";
         while($row = $result->fetch_assoc()) {
 
-            echo "<tr> <th>" . $row['name'] . "</th> <th>" . $row['lastname'] . "</th> <th>" . $row['id'] . "</th> </tr>";
+            echo "<tr> <td>" . $row['name'] . "</td> <td>" . $row['lastname'] . "</td> <td>" . $row['id'] . "</td> </tr>";
         }
         echo "</table>";
     } else {

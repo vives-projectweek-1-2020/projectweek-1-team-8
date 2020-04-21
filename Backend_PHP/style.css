@@ -21,3 +21,11 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+tr:nth-child(1) {
+    background-color: lightgray;
+}
+
+tr:nth-child(2) {
+    background-color: lightgreen;
+}

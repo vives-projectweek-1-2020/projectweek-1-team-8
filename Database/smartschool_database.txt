@@ -1,0 +1,35 @@
+CREATE TABLE user (
+firstname VARCHAR(32),
+lastname VARCHAR(32),
+age INT(3),
+email VARCHAR(320),
+password VARCHAR(32),
+timestamp TIMESTAMP,
+PRIMARY KEY (email)
+);
+
+CREATE TABLE address (
+street VARCHAR(48),
+streetnumber INT(3),
+city VARCHAR(32),
+state VARCHAR(32),
+postalcode INT(4),
+country VARCHAR(32),
+shop_id INT(11),
+user_email INT(11)
+);
+
+CREATE TABLE shop (
+name VARCHAR(64),
+space INT(11),
+typebussiness ENUM('food', 'health', 'market'),
+id INT(5) NOT NULL AUTO_INCREMENT,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE usershop (
+user_email INT(11),
+shop_id INT(11)
+PRIMARY KEY(user_email),
+PRIMARY KEY(shop_id)
+);

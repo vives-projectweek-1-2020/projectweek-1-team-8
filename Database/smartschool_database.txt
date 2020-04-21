@@ -29,7 +29,7 @@ PRIMARY KEY(id)
 
 CREATE TABLE usershop (
 user_email INT(11),
-shop_id INT(11)
+shop_id INT(11),
 PRIMARY KEY(user_email),
 PRIMARY KEY(shop_id)
-);
+); 

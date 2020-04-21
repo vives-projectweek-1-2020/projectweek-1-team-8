@@ -18,6 +18,12 @@ important variables:
 - Who has priority
 - How many times a person visited a shop (to derermine priority)
 
+## Members
+- [Arno Baecke](https://github.com/arnobaecke)
+- [Dylan Missuwe](https://github.com/DylanMissu)
+- [Timon Claerhout](https://github.com/TimonClaerhout)
+- [Wout Peirens](https://github.com/wout297)
+
 
 
 

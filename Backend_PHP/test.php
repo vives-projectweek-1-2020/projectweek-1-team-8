@@ -1,8 +1,8 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "exercises";
+    $servername = "web0125.zxcs.be";
+    $username = "u64108p68262_DylanMissu";
+    $password = "3w0zW!c8Wj";
+    $dbname = "u64108p68262_waitsmart";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,13 +11,13 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT first_name FROM exam";
+    $sql = "SELECT * FROM test_table";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo $row['first_name'] . "<br>";
+            echo $row['name'] . ", " . $row['lastname'] . "<br>";
         }
     } else {
         echo "0 results";

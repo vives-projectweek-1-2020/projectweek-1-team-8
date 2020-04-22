@@ -15,6 +15,14 @@
     ?>
 </head>
 <body>
+    <table>
+        <tr style='background-color: lightgreen; width: 10%;'>
+            <td>in shop</td>
+        </tr>
+        <tr style='background-color: lightsalmon;'>
+            <td>in queue</td>
+        </tr>
+    </table>
     <h1 id="title" >Queue:</h1>
     <div id="ob"></div>
 </body>

@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <statuspage v-bind="statuspage" />
+    <Navigation />
+    <router-view />
   </div>
 </template>
 
 <script>
-import statuspage from './components/statuspage.vue'
+import Navigation from '@/components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    statuspage
+    Navigation
   }
 }
 </script>
@@ -22,6 +23,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LoginScreen msg="Please log in to continue"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios'
+import LoginScreen from './components/LoginScreen.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LoginScreen
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #f0f0f0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

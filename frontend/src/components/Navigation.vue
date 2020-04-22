@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="navigationscreen">
         <ul>
             <li>
                 <router-link :to="{ name: 'home' }" >
@@ -31,7 +31,23 @@
 <style scoped>
 
 .router-link-exact-active {
-  color: #42b983;
+  color: red;
+}
+.navigationscreen{
+    background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
+    list-style-type: none;
+    margin: 20px;
+    padding: 80px 10px;
+    width: 30%;
+    min-width: 240px;
+}
+li{
+    display: inline;
+    margin: 10px;
+}
+ul{
+    margin: 0px;
+    padding-inline-start: 0px;
 }
 
 </style>

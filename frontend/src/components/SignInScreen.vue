@@ -2,13 +2,14 @@
   <div class="login-box">
     <img alt="WAITSMART" src="../assets/logo.png">
     <h2>Please log in to continue</h2>
+    {{ form }}
     <form action="#" @submit.prevent="login">
       <p>Username</p>
-      <input type="email" placeholder="Please enter your email." />
+      <input id="email" v-model="form.email" type="email" placeholder="Please enter your email." />
       <p>Password</p>
-      <input type="password" placeholder="Please enter your password." />
+      <input id="password" v-model="form.password" type="password" placeholder="Please enter your password." />
       <br><br>
-      <button type="submit" @click="login">Log in</button>
+      <button type="submit" @click="login">Sign in</button>
     </form>
   </div>
 </template>
@@ -17,8 +18,10 @@
 export default {
   data () {
     return {
-      username: '',
-      password: ''
+      form: {
+        username: '',
+        password: ''
+      }
     }
   },
   methods: {

@@ -1,26 +1,22 @@
 <template>
   <div id="app">
-    <QueuePage msg="Please log in to continue"/>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-
-import QueuePage from './components/QueuePage.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    QueuePage
+    HelloWorld
   }
 }
 </script>
 
 <style>
-body {
-  background-color: #f0f0f0;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

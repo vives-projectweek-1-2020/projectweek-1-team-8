@@ -5,6 +5,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Queue from '../views/QueueScreen.vue'
 import SignIn from '../views/SignIn.vue'
 import Register from '../views/Register.vue'
+import store from '@/store'
 
 Vue.use(VueRouter)
 
@@ -30,7 +31,16 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: Dashboard
+    component: Dashboard,
+    beforeEnter: (to, from, next) => {
+      if (!store.getters['auth/authenticated']) {
+        return next({
+          name: 'signin'
+        })
+      }
+
+      next()
+    }
   },
   {
     path: '/signin',

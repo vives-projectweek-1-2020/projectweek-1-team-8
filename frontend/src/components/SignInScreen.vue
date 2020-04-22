@@ -2,20 +2,19 @@
   <div class="signin-box">
     <img alt="WAITSMART" src="../assets/logo.png">
     <h2>Please log in to continue</h2>
-    {{ form }}
-    <form action="#" @submit.prevent="signin">
+    <form action="#" @submit.prevent="SignIn">
       <p>Username</p>
       <input id="email" v-model="form.email" type="email" placeholder="Please enter your email." />
       <p>Password</p>
       <input id="password" v-model="form.password" type="password" placeholder="Please enter your password." />
       <br><br>
-      <button type="submit" @click="signin">Sign in</button>
+      <button type="submit">Sign in</button>
     </form>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import { mapActions } from 'vuex'
 
 export default {
   data () {
@@ -27,10 +26,17 @@ export default {
     }
   },
   methods: {
-    async signin () {
-      const response = axios.post('http://localhost:8000/api/auth/signin')
-
-      console.log(response.data)
+    ...mapActions({
+      signIn: 'auth/signIn'
+    }),
+    SignIn () {
+      this.signIn(this.form).then(() => {
+        this.$router.replace({
+          name: 'dashboard'
+        })
+      }).catch(() => {
+        alert('Wrong credentials. Please try again.')
+      })
     }
   }
 }

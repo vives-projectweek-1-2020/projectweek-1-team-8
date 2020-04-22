@@ -28,6 +28,7 @@
 .router-link-exact-active {
   color: #42b983;
 }
+
 .navbar > *:hover {
     color: lightsalmon;
 }

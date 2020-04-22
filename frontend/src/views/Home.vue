@@ -1,12 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <p>Hello from home </p>
+    <HomeScreen />
   </div>
 </template>
 
 <script>
+import HomeScreen from '@/components/HomeScreen.vue'
+
 export default {
-  name: 'Home'
+  name: 'home',
+  components: {
+    HomeScreen
+  }
 }
 </script>

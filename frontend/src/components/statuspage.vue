@@ -1,9 +1,6 @@
 <template>
   <div>
-    <button>change password</button>
-    <button>sign out</button>
-    <br>
-    <img src="/img/logo/readme-logo.png"/>
+    <img src="@/assets/logo.png"/>
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
       <select v-model="selectedbusiness">

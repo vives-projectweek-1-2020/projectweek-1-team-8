@@ -20,7 +20,7 @@
                 Hello, *username comes here*
             </li>
             <li>
-            <router-link :to="{ name: 'dashboard' }" >
+                <router-link :to="{ name: 'dashboard' }" >
                     Dashboard
                 </router-link>
             </li>

@@ -26,7 +26,6 @@
 
 <script>
 export default {
-  name: 'statuspage',
   data () {
     return {
       businesses: [

@@ -4,122 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="img/favicon.ico">
+    <title>Statuspage</title>
   </head>
   <body>
 
-    <div id="account">
-    <button>change password</button>
-    <button>sign out</button>
-    </div>
-    
-
-    <div id="logo">
-      <img src="/img/logo/readme-logo.png"/>
-    </div>
-
-      <!-- <h1>Welcome to WaitSmart</h1> -->
-      <h2>Fill in this form to select the right business:</h2>
-
-      <div id="flexbox">
-
-        <div id="makechoisetypebusiness">
-        
-          <h2>Choose your type business:</h2>
-  
-          <select id="typebusiness">
-          <option>Baker</option>
-          <option>Doctor</option>
-          <option>Supermarkt</option>
-          </select>
-            
-        </div>
-
-        <div id="makechoisecity">
-        
-          <h2>Choose your city:</h2>
-  
-          <select id="cities">
-          <option>Brugge</option>
-          <option>Gent</option>
-          <option>Antwerpen</option>
-          </select>
-            
-        </div>
-
-      </div>
-
-      <div id="resultsdatabase">
-        <p id="results">Choose the right business where you wanna reservate:</p>
-        <p id="resultsfromdatabase"></p>
-      </div>
-
-      <div id="buttonreservation">
-        <button>Make reservation</button>
-      </div>
-      
-                       
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-      
-    </script>
-
-    <style>
-      body{
-        background-color:navajowhite;
-      }
-      #account{
-        display: block;
-        
-      }
-      #logo{
-        display:flex;
-        justify-content: center;
-        margin: 50px;
-      }
-      #makechoisetypebusiness{
-        display: grid;
-        justify-content: center;
-        width: 500px;
-        padding: 20px;
-        background-color:lightgray;
-      }
-      #makechoisecity{
-        display: grid;
-        justify-content: center;
-        width: 500px;
-        padding: 20px;
-        background-color: lightgray;
-      }
-      #flexbox{
-        display: flex;
-        justify-content: center;
-      }
-      h2{
-        display: flex;
-        justify-content: center;
-      }
-      #resultsdatabase{
-        display: grid;
-        justify-content: center;
-      }
-      #resultsfromdatabase{
-        display: grid;
-        height: 100px;
-        background-color: lightgray;
-        justify-content: center;
-      }
-      #results{
-        display: grid;
-        justify-content: center;
-      }
-      #buttonreservation{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
   </body>
 </html>

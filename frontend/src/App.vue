@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <statuspage v-bind="statuspage" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import statuspage from './components/statuspage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    statuspage
   }
 }
 </script>

@@ -25,7 +25,11 @@ export default {
     login () {
       this.$store.dispatch('login', {
         username: this.username,
+<<<<<<< HEAD
         password: this.password
+=======
+        password: this.password 
+>>>>>>> ee3f01e2b0450d7b70762f0501377029c9494748
       })
     }
   }

@@ -1,32 +1,40 @@
 <template>
   <div id="app">
-    <QueuePage msg="Please log in to continue"/>
+    <Navigation />
+    <router-view />
   </div>
 </template>
 
 <script>
-
-import QueuePage from './components/QueuePage.vue'
+import Navigation from '@/components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    QueuePage
+    Navigation
   }
 }
 </script>
 
 <style>
-body {
-  background-color: #f0f0f0;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

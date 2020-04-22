@@ -1,10 +1,10 @@
-let pollDelay = 1000;
+let pollDelay = 1000; // polls every 1 second
 let value = 0;
 function poll(){
     setTimeout(function(){
         $.ajax({ url: "./test.php?poll="+value, cache: false, success: function(data){
             value = data;
-            $("#ob").html(value);
+            $("#ob").html(`${value}`);
             poll();
         }});
     }, pollDelay);

@@ -1,49 +1,90 @@
 <template>
-    <div>
-        <nav class="navbar">
-            <a>
-                Welcome *username comes here*!
-            </a>
-            <router-link :to="{ name: 'home' }" >
-                Home
-            </router-link>
-            <router-link :to="{ name: 'signin' }" >
-                Sign in
-            </router-link>
-            <router-link :to="{ name: '#' }">
-                Sign out
-            </router-link>
-            <router-link :to="{ name: 'dashboard' }" >
-                Dashboard
-            </router-link>
-            <router-link :to="{ name: 'queue' }" >
-                Queue
-            </router-link>
-        </nav>
-    </div>
+        <ul class="navbar">
+            <li>
+                <router-link :to="{ name: 'home' }" >
+                    Home
+                </router-link>
+            </li>
+            <template v-if="authenticated">
+              <li>
+              <router-link :to="{ name: 'dashboard' }" >
+                    Dashboard
+                  </router-link>
+              </li>
+              <li>
+                Hello, {{ user.name }}
+              </li>
+              <li>
+                  <a href= "#" @click.prevent="signOut">
+                      Sign out
+                  </a>
+              </li>
+            </template>
+            <template v-else>
+              <li>
+                <router-link :to="{ name: 'signin' }" >
+                  Sign in
+                </router-link>
+              </li>
+            </template>
+        </ul>
 </template>
+
+<script>
+import { mapActions, mapGetters } from 'vuex'
+
+export default {
+  methods: {
+    ...mapActions({
+      signOutAction: 'auth/signOut'
+    }),
+
+    signOut () {
+      this.signOutAction().then(() => {
+        this.$router.replace({
+          name: 'home'
+        })
+      })
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      authenticated: 'auth/authenticated',
+      user: 'auth/user'
+    })
+  }
+
+}
+</script>
 
 <style scoped>
 
 .navbar {
-    overflow: hidden;
-    background-color: #303030;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #444;
 }
 
-.navbar > * {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.navbar li {
+  list-style-type: none;
+  padding: 20px;
+  cursor: pointer;
+  color: white
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
 .router-link-exact-active {
-  color: #42b983;
+  color: lightblue !important;
 }
 
-.navbar > *:hover {
-    color: lightsalmon;
+.navbar li:hover {
+  background-color: lightseagreen;
 }
 </style>

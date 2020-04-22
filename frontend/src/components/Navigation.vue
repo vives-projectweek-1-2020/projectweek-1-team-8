@@ -6,27 +6,59 @@
                     Home
                 </router-link>
             </li>
-            <li>
+            <template v-if="authenticated">
+              <li>
+                  Hello, {{ user.name }}
+              </li>
+              <li>
+                  <a href= "#" @click.prevent="signOut">
+                      Sign out
+                  </a>
+              </li>
+              <li>
+              <router-link :to="{ name: 'dashboard' }" >
+                      Dashboard
+                  </router-link>
+              </li>
+            </template>
+            <template v-else>
+              <li>
                 <router-link :to="{ name: 'signin' }" >
-                    Sign in
+                  Sign in
                 </router-link>
-            </li>
-            <li>
-                <a href ="#">
-                    Sign out
-                </a>
-            </li>
-            <li>
-                Hello, *username comes here*
-            </li>
-            <li>
-            <router-link :to="{ name: 'dashboard' }" >
-                    Dashboard
-                </router-link>
-            </li>
+              </li>
+            </template>
         </ul>
     </div>
 </template>
+
+<script>
+import { mapActions, mapGetters } from 'vuex'
+
+export default {
+  methods: {
+    ...mapActions({
+      signOutAction: 'auth/signOut'
+    }),
+
+    signOut () {
+      this.signOutAction().then(() => {
+        this.$router.replace({
+          name: 'home'
+        })
+      })
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      authenticated: 'auth/authenticated',
+      user: 'auth/user'
+    })
+  }
+
+}
+</script>
 
 <style scoped>
 

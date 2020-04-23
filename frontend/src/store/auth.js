@@ -28,7 +28,7 @@ export default {
   actions: {
     // Sign in and return the token
     async signIn ({ dispatch }, credentials) {
-      const response = await axios.post('auth/signin', credentials)
+      const response = await axios.post('api/auth/signin', credentials)
 
       return dispatch('attempt', response.data.token)
     },
@@ -44,7 +44,7 @@ export default {
       }
 
       try {
-        const response = await axios.get('auth/me') // header from subscriber
+        const response = await axios.get('api/auth/me') // header from subscriber
 
         // Store the information of the response
         commit('SET_USER', response.data)

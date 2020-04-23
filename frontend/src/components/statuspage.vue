@@ -10,15 +10,10 @@
     <h3>Choose your city:</h3>
       <hr id="short-hr">
       <select v-model="selectedcity" id="city">
-        <option v-for="city in cities" v-bind:key="city" v-bind:value="city.value">{{city.text}}</option>
+        <option v-for="city in cities" v-bind:key="city">{{city.title}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
-<<<<<<< HEAD
-      <hr id="long-hr">
-      <select v-model="selectedspecificbusiness" multiple>
-=======
     <select v-model="selectedspecificbusiness" multiple id="specificoptions">
->>>>>>> cf0c70dd2b3653f185e79344e3d62a8e0f893dd8
       <option>A</option>
       <option>B</option>
       <option>C</option>
@@ -32,11 +27,15 @@
       <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
       <br>
       <input type="submit" value="Make reservation"/>
+      <form action="#" @submit.prevent="Test">
+        <button type="submit">Send request</button>
+      </form>
   </div>
 </template>
 
 <script>
 import Datepicker from 'vuejs-datetimepicker'
+import axios from 'axios'
 
 export default {
   name: 'statuspage',
@@ -50,44 +49,19 @@ export default {
         { text: 'Doctor', value: 'Doctor' },
         { text: 'Supermarket', value: 'Supermarket' }
       ],
-      cities: [
-        { text: 'Brugge', value: 'Brugge' },
-        { text: 'Gent', value: 'Gent' },
-        { text: 'Antwerpen', value: 'Antwerpen' }
-      ]
+      cities: []
+    }
+  },
+  methods: {
+    async Test () {
+      const response = await axios.get('address')
+      console.log(response)
     }
   }
 }
 </script>
 
 <style>
-<<<<<<< HEAD
-#app {
-  background: lightgray;
-}
-input, option,#city,#business{
-  padding: 5px;
-}
-input{
-  margin: 20px 0px 20px 0px;
-}
-hr{
-  border-top: solid darkgray 1px;
-  margin-top: -10px;
-  width: 16%;
-}
-#long-hr {
-  width: 35%;
-}
-#short-hr {
-  width: 12%;
-}
-#timestamp.datetime-picker{
-  margin: auto;
-}
-.calender-div[data-v-4bd11526]{
-  top: -300px;
-=======
 button {
     background: linear-gradient(to right, #6065D9, #17D7FA);
     color: white;
@@ -106,6 +80,5 @@ button {
 }
 #specificoptions{
   margin: 0px 0px 20px 0px;
->>>>>>> cf0c70dd2b3653f185e79344e3d62a8e0f893dd8
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="demo">
-    <h1>test {{title['data']['time']['updated']}} </h1>
+    <h1>hello  {{title['data']['firstname']}} </h1>
     <form action="#" @submit.prevent="test">
       <button type="submit">test</button>
     </form>
@@ -24,7 +24,7 @@ export default {
   methods: {
     test () {
       axios
-        .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+        .get('http://localhost:8000/user/1')
         .then(response => (this.title = response))
     }
   }

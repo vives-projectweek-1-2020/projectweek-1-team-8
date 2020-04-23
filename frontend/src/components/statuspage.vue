@@ -69,7 +69,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
 #app {
   background: lightgray;
 }
@@ -95,15 +94,15 @@ hr{
 }
 .calender-div[data-v-4bd11526]{
   top: -300px;
-=======
-button {
-    background: linear-gradient(to right, #6065D9, #17D7FA);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
+}
+button{
+  background: linear-gradient(to right, #6065D9, #17D7FA);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
 }
 .statuspage{
   background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
@@ -114,6 +113,5 @@ button {
 }
 #specificoptions{
   margin: 0px 0px 20px 0px;
->>>>>>> ea6653caaafb9bf2c656156e7acc97d8f6fc3804
 }
 </style>

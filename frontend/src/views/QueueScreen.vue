@@ -1,6 +1,7 @@
 <template>
   <div id="demo">
-    <h1>hello  {{title['data']['firstname']}} </h1>
+    <h1>hello  {{title['data'].get(1)}} </h1>
+
     <form action="#" @submit.prevent="test">
       <button type="submit">test</button>
     </form>
@@ -24,7 +25,7 @@ export default {
   methods: {
     test () {
       axios
-        .get('http://localhost:8000/user/1')
+        .get('http://localhost:8000/queue')
         .then(response => (this.title = response))
     }
   }

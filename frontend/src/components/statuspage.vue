@@ -10,7 +10,7 @@
     <h3>Choose your city:</h3>
       <hr id="short-hr">
       <select v-model="selectedcity" id="city">
-        <option v-for="city in cities" v-bind:key="city" v-bind:value="city.value">{{city.text}}</option>
+        <option v-for="city in cities" v-bind:key="city">{{city.title}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
     <select v-model="selectedspecificbusiness" multiple id="specificoptions">
@@ -27,11 +27,15 @@
       <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
       <br>
       <input type="submit" value="Make reservation"/>
+      <form action="#" @submit.prevent="Test">
+        <button type="submit">Send request</button>
+      </form>
   </div>
 </template>
 
 <script>
 import Datepicker from 'vuejs-datetimepicker'
+import axios from 'axios'
 
 export default {
   name: 'statuspage',
@@ -45,11 +49,13 @@ export default {
         { text: 'Doctor', value: 'Doctor' },
         { text: 'Supermarket', value: 'Supermarket' }
       ],
-      cities: [
-        { text: 'Brugge', value: 'Brugge' },
-        { text: 'Gent', value: 'Gent' },
-        { text: 'Antwerpen', value: 'Antwerpen' }
-      ]
+      cities: []
+    }
+  },
+  methods: {
+    async Test () {
+      const response = await axios.get('address')
+      console.log(response)
     }
   }
 }

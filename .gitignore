@@ -1,0 +1,4 @@
+/backend_laravel/.env
+/backend_laravel/vendor/
+
+/frontend/node_modules/

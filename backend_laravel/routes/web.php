@@ -20,5 +20,6 @@ Route::get('/', function () {
 Route::apiResources([
     'address' => 'AddressController',
     'user' => 'UserController',
-    'shops' => 'ShopController'
+    'shops' => 'ShopController',
+    'queue' => 'QueueController'
 ]);

@@ -12,11 +12,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute('POST', 'signin', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(157): Illuminate\\Routing\\Router->addRoute('POST', 'signin', 'SignInControlle...')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->post('signin', 'SignInControlle...')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -63,11 +65,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute('POST', 'signin', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(157): Illuminate\\Routing\\Router->addRoute('POST', 'signin', 'SignInControlle...')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->post('signin', 'SignInControlle...')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -110,11 +114,13 @@
 #5 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute('POST', 'signin', Array)
 #6 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(157): Illuminate\\Routing\\Router->addRoute('POST', 'signin', 'SignInControlle...')
 #7 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->post('signin', 'SignInControlle...')
-#8 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#8 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -668,11 +674,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute('POST', 'signin', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(157): Illuminate\\Routing\\Router->addRoute('POST', 'signin', 'SignInControlle...')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->post('signin', 'SignInControlle...')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -721,11 +729,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute('POST', 'signin', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(157): Illuminate\\Routing\\Router->addRoute('POST', 'signin', 'SignInControlle...')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->post('signin', 'SignInControlle...')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(10): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -2034,11 +2044,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute(Array, 'me', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(145): Illuminate\\Routing\\Router->addRoute(Array, 'me', 'MeController')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('me', 'MeController')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(12): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(12): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(13): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(13): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')
@@ -2329,11 +2341,13 @@
 #9 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(447): Illuminate\\Routing\\Router->createRoute(Array, 'me', Array)
 #10 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(145): Illuminate\\Routing\\Router->addRoute(Array, 'me', 'MeController')
 #11 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('me', 'MeController')
-#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(12): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#12 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(12): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #13 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
 #14 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
 #15 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->group(Array, Object(Closure))
-#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\outes\\api.php(13): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
+#16 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\
+outes\\api.php(13): Illuminate\\Support\\Facades\\Facade::__callStatic('group', Array)
 #17 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\arnob\\\\...')
 #18 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\arnob\\\\...')
 #19 C:\\Users\\arnob\\Documents\\VIVESgit\\Projectweek1\\projectweek-1-team-8\\backend_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\arnob\\\\...')

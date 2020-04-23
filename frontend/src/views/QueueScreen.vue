@@ -1,10 +1,11 @@
 <template>
   <div id="demo">
-    <h1>hello  {{title['data'].get(1)}} </h1>
-
-    <form action="#" @submit.prevent="test">
-      <button type="submit">test</button>
-    </form>
+    <table id='queue' align='center'>
+      <tr> <th>username</th> <th>number</th> </tr>
+      <tr v-for="row in title.data" v-bind:key="row" v-bind:value="row.value">
+        <td>{{row.firstname}}</td> <td>{{row.number}}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -22,10 +23,13 @@ export default {
       }
     }
   },
+  created: function () {
+    this.loadQueue()
+  },
   methods: {
-    test () {
+    loadQueue () {
       axios
-        .get('http://localhost:8000/queue')
+        .get('queue/getQueue/'.concat(4))
         .then(response => (this.title = response))
     }
   }
@@ -34,5 +38,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#queue {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
 </style>

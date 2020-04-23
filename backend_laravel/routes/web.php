@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::apiResources([
+    'address' => 'AddressController',
+    'user' => 'UserController',
+    'shops' => 'ShopController'
+]);

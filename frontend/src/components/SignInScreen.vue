@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="signin-box">
     <img alt="WAITSMART" src="../assets/logo.png">
     <h2>Please log in to continue</h2>
@@ -9,8 +10,11 @@
       <input id="password" v-model="form.password" type="password" placeholder="Please enter your password." />
       <br><br>
       <button type="submit">Sign in</button>
+      <br><br>
+      <p>Don't have a waitsmart account yet?</p><a href="/Register">Register now</a>
     </form>
   </div>
+</div>
 </template>
 
 <script>

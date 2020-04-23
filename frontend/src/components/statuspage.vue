@@ -13,12 +13,7 @@
         <option v-for="city in cities" v-bind:key="city" v-bind:value="city.value">{{city.text}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
-<<<<<<< HEAD
-      <hr id="long-hr">
-      <select v-model="selectedspecificbusiness" multiple>
-=======
     <select v-model="selectedspecificbusiness" multiple id="specificoptions">
->>>>>>> cf0c70dd2b3653f185e79344e3d62a8e0f893dd8
       <option>A</option>
       <option>B</option>
       <option>C</option>
@@ -61,7 +56,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
 #app {
   background: lightgray;
 }
@@ -87,25 +81,5 @@ hr{
 }
 .calender-div[data-v-4bd11526]{
   top: -300px;
-=======
-button {
-    background: linear-gradient(to right, #6065D9, #17D7FA);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
-}
-.statuspage{
-  background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
-    margin: 20px;
-    width: 30%;
-    min-width: 240px;
-    padding: 80px 10px;
-}
-#specificoptions{
-  margin: 0px 0px 20px 0px;
->>>>>>> cf0c70dd2b3653f185e79344e3d62a8e0f893dd8
 }
 </style>

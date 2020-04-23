@@ -4,16 +4,16 @@
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
     <hr>
-      <select v-model="selectedbusiness" id="business">
-        <option v-for="business in businesses" v-bind:key="business" v-bind:value="business.value">{{business.text}}</option>
+      <select id="business">
+        <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.text}}</option>
       </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
-      <select v-model="selectedcity" id="city">
-        <option v-for="city in cities" v-bind:key="city">{{city.title}}</option>
+      <select id="city">
+        <option v-for="(city, idx) in cities" :key="idx">{{city.city}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
-    <select v-model="selectedspecificbusiness" multiple id="specificoptions">
+    <select multiple id="specificoptions">
       <option>A</option>
       <option>B</option>
       <option>C</option>
@@ -54,8 +54,10 @@ export default {
   },
   methods: {
     async Test () {
-      const response = await axios.get('address')
-      console.log(response)
+      await axios.get('address')
+        .then(({ data }) => {
+          this.cities = data
+        })
     }
   }
 }

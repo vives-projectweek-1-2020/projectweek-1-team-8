@@ -3,6 +3,7 @@
   <div class="signin-box">
     <img alt="WAITSMART" src="../assets/logo.png">
     <h2>Please log in to continue</h2>
+    <hr>
     <form action="#" @submit.prevent="SignIn">
       <p>Username</p>
       <input id="email" v-model="form.email" type="email" placeholder="Please enter your email." />
@@ -73,5 +74,8 @@ button {
 
 .signin-box img {
     max-width: 80%;
+}
+hr{
+  width: 80%;
 }
 </style>

@@ -11,6 +11,9 @@
                     Dashboard
                   </router-link>
               </li>
+                <router-link :to="{ name: 'queue' }" >
+                    Queue
+                  </router-link>
               <li>
                 Hello, {{ user.name }}
               </li>

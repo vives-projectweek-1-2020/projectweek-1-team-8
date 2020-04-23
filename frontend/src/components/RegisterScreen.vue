@@ -2,6 +2,7 @@
 <div class="create-user">
       <img alt="WAITSMART" src="../assets/logo.png"/>
       <h2>Register</h2>
+      <hr>
       <div class="input-create">
         <form action="#" @submit.prevent="Register">
           <div id="firstname">
@@ -64,6 +65,7 @@ export default {
 input {
     border: 1px solid gray;
     padding: 5px 10px;
+    width: 50%;
 }
 
 button {
@@ -80,7 +82,10 @@ button {
     width: 30%;
     min-width: 240px;
     background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
-    margin: 20px;
     padding: 80px 10px;
+    margin: 20px;
+}
+hr {
+    width: 80%;
 }
 </style>

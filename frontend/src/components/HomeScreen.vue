@@ -1,28 +1,18 @@
 <template>
     <div class="homescreen">
-        <div class="banner">
-            <h2>Prevent long queques</h2>
-            <p>With a few clicks in our app can you make a digital <br> reservation to a bussiness you select.
-            So you dont lose time waiting in a long queque.</p>
+        <div class="left">
+                <img id="logo" src="@/assets/logo.png"/>
+                <h2>Prevent long queques</h2>
+                <p>With a few clicks in our app can you make a digital <br> reservation to a bussiness you select.
+                <br>So you dont lose time waiting in a long queque.</p>
+                <p>If you want more information:</p>
+                <a href="/About">About us</a>
         </div>
-        <img id="logo" src="@/assets/logo.png"/>
     </div>
 </template>
 
 <style>
-.homescreen{
-    width: 30%;
-    min-width: 240px;
-    margin: 20px;
-    padding: 80px 10px;
-}
-.banner {
-    width: 80%;
-    height: 70%;
-    margin-left: 120 px;
-}
-#logo{
-    width: 50%;
-    float: right;
+.left{
+    background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
 }
 </style>

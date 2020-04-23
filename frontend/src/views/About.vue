@@ -1,11 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="home">
+    <AboutScreen />
   </div>
 </template>
 
 <script>
-export default {
+// @ is an alias to /src
+import AboutScreen from '@/components/AboutScreen.vue'
 
+export default {
+  name: 'about',
+  components: {
+    AboutScreen
+  }
 }
 </script>

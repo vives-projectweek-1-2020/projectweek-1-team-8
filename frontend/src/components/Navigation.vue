@@ -1,26 +1,28 @@
 <template>
         <ul class="navbar">
             <li>
+                Hello, {{ user.name }}
+              </li>
+            <li>
                 <router-link :to="{ name: 'home' }" >
                     Home
                 </router-link>
             </li>
             <template v-if="authenticated">
               <li>
-              <router-link :to="{ name: 'dashboard' }" >
+                <router-link :to="{ name: 'dashboard' }" >
                     Dashboard
-                  </router-link>
+                </router-link>
               </li>
-                <router-link :to="{ name: 'queue' }" >
+              <li>
+                <router-link :to="{ name: 'queueList' }" >
                     Queue
-                  </router-link>
-              <li>
-                Hello, {{ user.name }}
+                </router-link>
               </li>
               <li>
-                  <a href= "#" @click.prevent="signOut">
-                      Sign out
-                  </a>
+                <a href= "#" @click.prevent="signOut">
+                    Sign out
+                </a>
               </li>
             </template>
             <template v-else>
@@ -92,7 +94,7 @@ export default {
   color: lightblue !important;
 }
 
-.navbar li:hover {
+.navbar li:not(:first-child):hover {
   background-color: lightseagreen;
 }
 </style>

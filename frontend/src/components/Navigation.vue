@@ -11,6 +11,9 @@
                     Dashboard
                   </router-link>
               </li>
+                <router-link :to="{ name: 'queue' }" >
+                    Queue
+                  </router-link>
               <li>
                 Hello, {{ user.name }}
               </li>
@@ -24,6 +27,11 @@
               <li>
                 <router-link :to="{ name: 'signin' }" >
                   Sign in
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{ name: 'register' }" >
+                  Register
                 </router-link>
               </li>
             </template>

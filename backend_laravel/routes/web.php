@@ -17,4 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('address', 'AddressController');
+Route::apiResources([
+    'address' => 'AddressController',
+    'user' => 'UserController',
+    'shops' => 'ShopController',
+    'queue' => 'QueueController'
+]);

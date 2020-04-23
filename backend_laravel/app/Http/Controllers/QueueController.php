@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Address;
+use DB;
+use App\Queue;
 use Illuminate\Http\Request;
 
-class AddressController extends Controller
+class QueueController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,10 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return Address::all();
+        
+        $queue = DB::select('SELECT users.firstname, queue.number FROM queue JOIN users ON queue.user_id = users.id JOIN shops ON queue.shop_id = shops.id WHERE shops.id = 1 ORDER BY number');
+        return $queue;
+
     }
 
     /**
@@ -35,31 +39,27 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        $address = new Address();
-        $address->street = $request->input('street');
-        $address->number = $request->input('number');
-        $address->save();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Queue  $queue
      * @return \Illuminate\Http\Response
      */
-    public function show(Address $address)
+    public function show(Queue $queue)
     {
-        //
-        return $address;
+        return $queue;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Queue  $queue
      * @return \Illuminate\Http\Response
      */
-    public function edit(Address $address)
+    public function edit(Queue $queue)
     {
         //
     }
@@ -68,10 +68,10 @@ class AddressController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Address  $address
+     * @param  \App\Queue  $queue
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Address $address)
+    public function update(Request $request, Queue $queue)
     {
         //
     }
@@ -79,10 +79,10 @@ class AddressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Queue  $queue
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Address $address)
+    public function destroy(Queue $queue)
     {
         //
     }

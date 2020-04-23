@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Address;
+use App\Shop;
 use Illuminate\Http\Request;
 
-class AddressController extends Controller
+class shopController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return Address::all();
+        return Shop::all();
     }
 
     /**
@@ -35,31 +35,27 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        $address = new Address();
-        $address->street = $request->input('street');
-        $address->number = $request->input('number');
-        $address->save();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function show(Address $address)
+    public function show(Shop $shop)
     {
-        //
-        return $address;
+        return $shop;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function edit(Address $address)
+    public function edit(Shop $shop)
     {
         //
     }
@@ -68,10 +64,10 @@ class AddressController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Address  $address
+     * @param  \App\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Address $address)
+    public function update(Request $request, Shop $shop)
     {
         //
     }
@@ -79,10 +75,10 @@ class AddressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Address  $address
+     * @param  \App\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Address $address)
+    public function destroy(Shop $shop)
     {
         //
     }

@@ -10,7 +10,7 @@
     <h3>Choose your city:</h3>
       <hr id="short-hr">
       <select v-model="selectedcity" id="city">
-        <option v-for="city in cities" v-bind:key="city" v-bind:value="city.value">{{city.text}}</option>
+        <option v-for="city in cities" v-bind:key="city">{{city.title}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
     <select v-model="selectedspecificbusiness" multiple id="specificoptions">
@@ -27,11 +27,15 @@
       <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
       <br>
       <input type="submit" value="Make reservation"/>
+      <form action="#" @submit.prevent="Test">
+        <button type="submit">Send request</button>
+      </form>
   </div>
 </template>
 
 <script>
 import Datepicker from 'vuejs-datetimepicker'
+import axios from 'axios'
 
 export default {
   name: 'statuspage',
@@ -45,17 +49,20 @@ export default {
         { text: 'Doctor', value: 'Doctor' },
         { text: 'Supermarket', value: 'Supermarket' }
       ],
-      cities: [
-        { text: 'Brugge', value: 'Brugge' },
-        { text: 'Gent', value: 'Gent' },
-        { text: 'Antwerpen', value: 'Antwerpen' }
-      ]
+      cities: []
+    }
+  },
+  methods: {
+    async Test () {
+      const response = await axios.get('address')
+      console.log(response)
     }
   }
 }
 </script>
 
 <style>
+<<<<<<< HEAD
 #app {
   background: lightgray;
 }
@@ -81,5 +88,25 @@ hr{
 }
 .calender-div[data-v-4bd11526]{
   top: -300px;
+=======
+button {
+    background: linear-gradient(to right, #6065D9, #17D7FA);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+}
+.statuspage{
+  background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
+    margin: 20px;
+    width: 30%;
+    min-width: 240px;
+    padding: 80px 10px;
+}
+#specificoptions{
+  margin: 0px 0px 20px 0px;
+>>>>>>> ea6653caaafb9bf2c656156e7acc97d8f6fc3804
 }
 </style>

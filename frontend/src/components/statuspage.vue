@@ -4,11 +4,17 @@
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
     <hr>
+    <form action="#" @submit.prevent="Test2">
+        <button type="submit">Show businesses</button>
+    </form>
       <select id="business">
-        <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.text}}</option>
+        <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
       </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
+      <form action="#" @submit.prevent="Test1">
+        <button type="submit">Show cities</button>
+      </form>
       <select id="city">
         <option v-for="(city, idx) in cities" :key="idx">{{city.city}}</option>
       </select>
@@ -27,9 +33,6 @@
       <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
       <br>
       <input type="submit" value="Make reservation"/>
-      <form action="#" @submit.prevent="Test">
-        <button type="submit">Send request</button>
-      </form>
   </div>
 </template>
 
@@ -44,19 +47,21 @@ export default {
   },
   data () {
     return {
-      businesses: [
-        { text: 'Baker', value: 'Baker' },
-        { text: 'Doctor', value: 'Doctor' },
-        { text: 'Supermarket', value: 'Supermarket' }
-      ],
+      businesses: [],
       cities: []
     }
   },
   methods: {
-    async Test () {
+    async Test1 () {
       await axios.get('address')
         .then(({ data }) => {
           this.cities = data
+        })
+    },
+    async Test2 () {
+      await axios.get('shops')
+        .then(({ data }) => {
+          this.businesses = data
         })
     }
   }

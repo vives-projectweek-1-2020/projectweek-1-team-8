@@ -46,7 +46,6 @@ const routes = [
           name: 'signin'
         })
       }
-
       next()
     }
   },
@@ -58,7 +57,15 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: Register,
+    beforeEnter: (to, from, next) => {
+      if (store.getters['auth/authenticated']) {
+        return next({
+          name: 'dashboard'
+        })
+      }
+      next()
+    }
   }
 ]
 

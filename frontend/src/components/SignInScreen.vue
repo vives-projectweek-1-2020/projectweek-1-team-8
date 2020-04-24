@@ -46,12 +46,12 @@ export default {
   },
   methods: {
     ...mapActions({
-      signIn: 'auth/signIn'
+      signInAction: 'auth/signIn'
     }),
     SignIn () {
       this.showNotice = true
       this.showAlert = false
-      this.signIn(this.form).then(() => {
+      this.signInAction(this.form).then(() => {
         this.$router.replace({
           name: 'dashboard'
         })

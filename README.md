@@ -29,7 +29,11 @@ some important variables:
 - Front-end: Vue
 
 ## Instalation guide
-To run our website, you need to have some tools. This tools are composer (for back-end) and npm (for front-end). You can install these two tools by executing the following commands in the command line.
+To run our website, you need to have some tools. This tools are composer (for back-end) and npm (for front-end). You can install these two tools by executing the following commands in the command line (PowerShell).
+- To install composer on computer browse to:
+
+[composer](https://getcomposer.org/download/)
+
 - To install composer:
 ```powershell
 composer install
@@ -56,8 +60,8 @@ Normally, your back-end will run on the localhost:8000 an your front-end wil run
 - [Wout Peirens](https://github.com/wout297)
 
 ## Mentors
--[Sille Van Landschoot](https://github.com/sillevl)
--[Piet Cordemans](http://github.com/pcordemans)
+- [Sille Van Landschoot](https://github.com/sillevl)
+- [Piet Cordemans](http://github.com/pcordemans)
 
 ## Movie
 

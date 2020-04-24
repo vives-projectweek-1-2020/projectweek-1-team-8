@@ -9,6 +9,11 @@
       <input id="password" v-model="form.password" type="password" placeholder="Please enter your password." />
       <br><br>
       <button type="submit">Sign in</button>
+      <p id="alert" v-if="showAlert">
+        Something went wrong. Please check your credentials.
+        <br>
+        If this problem keeps occuring, please contact the site administrator.
+      </p>
     </form>
   </div>
 </template>
@@ -22,7 +27,8 @@ export default {
       form: {
         email: '',
         password: ''
-      }
+      },
+      showAlert: false
     }
   },
   methods: {
@@ -34,8 +40,9 @@ export default {
         this.$router.replace({
           name: 'dashboard'
         })
+        this.showAlert = false
       }).catch(() => {
-        alert('Wrong credentials. Please try again.')
+        this.showAlert = true
       })
     }
   }
@@ -69,5 +76,13 @@ button {
 
 .signin-box img {
     max-width: 80%;
+}
+
+#alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 16px 0px;
 }
 </style>

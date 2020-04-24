@@ -10,6 +10,7 @@ Route::group(
         Route::post('signin', 'SignInController');
         Route::post('signout', 'SignOutController');
         Route::get('me', 'MeController');
+        Route::post('register', 'RegisterController');
     }
 );
 

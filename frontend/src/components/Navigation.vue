@@ -12,7 +12,7 @@
                   </router-link>
               </li>
               <li>
-                Hello, {{ user.name }}
+                Hello, {{ user.firstname }}
               </li>
               <li>
                   <a href= "#" @click.prevent="signOut">

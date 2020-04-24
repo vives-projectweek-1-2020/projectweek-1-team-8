@@ -31,9 +31,9 @@ some important variables:
 ## Instalation guide
 To run our website, you need to have some tools. This tools are composer (for back-end) and npm (for front-end). You can install these two tools by executing the following commands in the command line (PowerShell).
 - To install composer on computer browse to:
-
+```powershell
 [composer](https://getcomposer.org/download/)
-
+```
 - To install composer:
 ```powershell
 composer install

@@ -24,18 +24,42 @@ some important variables:
 - Who has priority
 - How many times a person visited a shop (to derermine priority)
 
+## tools
+- Database: mySQL
+- Back-end: PHP
+- Front-end: Vue
+
+## Instalation guide
+To run our website, you need to have some tools. This tools are composer (for back-end) and npm (for front-end). You can install these two tools by executing the following commands in the command line.
+- To install composer:
+```powershell
+composer install
+```
+- To install npm:
+```powershell
+npm install
+```
+Now you have the tools for setting up your localhosts (back-end and front-end). Make sure you run the back-end command in the back-end folder and the front-end command in the front-end folder.
+- To run your back-end:
+```powershell
+php artisan serve
+```
+- To run your front-end:
+```powershell
+npm run serve
+```
+Normally, your back-end will run on the localhost:8000 an your front-end wil run on the localhost:8080. Now you can surf to this websites.
+
 ## Team members
 - [Arno Baecke](https://github.com/arnobaecke)
 - [Dylan Missuwe](https://github.com/DylanMissu)
 - [Timon Claerhout](https://github.com/TimonClaerhout)
 - [Wout Peirens](https://github.com/wout297)
 
-## tools
-- Database: mySQL
-- Back-end: PHP
-- Front-end: Vue
+## Mentors
+-[Sille Van Landschoot](https://github.com/sillevl)
+-[Piet Cordemans](http://github.com/pcordemans)
 
+## Movie
 
-
-
-
+To presentate Waitsmart, we have a short introduction movie: [Waitsmart]()

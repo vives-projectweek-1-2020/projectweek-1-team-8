@@ -11,7 +11,7 @@
       </li>
       <li>
       <router-link :to="{ name: 'dashboard' }" >
-            Dashboard {{ user.name }}
+            Dashboard ({{ user.firstname }})
           </router-link>
       </li>
       <li>
@@ -93,6 +93,7 @@ export default {
 .navbar a {
   color: white;
   text-decoration: none;
+  padding: 20px 0px;
 }
 
 .router-link-exact-active {

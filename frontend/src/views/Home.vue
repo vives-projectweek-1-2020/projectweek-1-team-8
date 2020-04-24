@@ -16,7 +16,7 @@
           <h3>Start with it today!</h3>
       </div>
       <div>
-        <router-link :to="{ name: 'signin' }" >
+        <router-link :to="{ name: 'register' }" >
           <button>Register</button>
         </router-link>
       </div>
@@ -29,8 +29,8 @@
       </p>
       <p>
         The shop accepts visitors until it has reached the maximum allowed visitors (can be 1).
-        The amount of visitors will be live updated on the app/website. If possible, there will be a display outside too.
-        The business owner can control the flow in his business via the same app.
+        The amount of visitors will be live updated on the website. If possible, there will be a display outside the store too.
+        The business owner can control the flow in his business on the same app.
       </p>
       <b>
         More info coming soon
@@ -126,7 +126,6 @@ a {
 button {
     display: block;
     margin: auto;
-    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;

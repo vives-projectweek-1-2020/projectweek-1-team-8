@@ -18,10 +18,9 @@ class AddressController extends Controller
         return Address::all();
     }
 
-    public function getCities()
+    public function GetCities()
     {
-        $queue = DB::select('SELECT city FROM address GROUP BY city');
-        return $queue;
+        return DB::select('SELECT city FROM address GROUP BY city');
     }
 
     /**

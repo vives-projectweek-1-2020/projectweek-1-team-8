@@ -1,7 +1,9 @@
 <template>
+<div>
   <div class="signin-box">
     <img alt="WAITSMART" src="../assets/logo.png">
     <h2>Please log in to continue</h2>
+    <hr>
     <form action="#" @submit.prevent="SignIn">
       <p>Username</p>
       <input id="email" v-model="form.email" type="email" placeholder="Please enter your email." />
@@ -14,8 +16,11 @@
         <br>
         If this problem keeps occuring, please contact the site administrator.
       </p>
+      <br><br>
+      <p>Don't have a waitsmart account yet?</p><a href="/Register">Register now</a>
     </form>
   </div>
+</div>
 </template>
 
 <script>
@@ -84,5 +89,9 @@ button {
   border: 1px solid #f5c6cb;
   border-radius: 5px;
   padding: 16px 0px;
+}
+
+hr {
+  width: 80%;
 }
 </style>

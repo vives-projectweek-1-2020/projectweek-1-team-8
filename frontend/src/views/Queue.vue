@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <RegisterScreen />
+    <QueueScreen />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import RegisterScreen from '@/components/RegisterScreen.vue'
+import QueueScreen from '@/components/QueueScreen.vue'
 
 export default {
-  name: 'register',
+  name: 'QueueScreen',
   components: {
-    RegisterScreen
+    QueueScreen
   }
 }
 </script>

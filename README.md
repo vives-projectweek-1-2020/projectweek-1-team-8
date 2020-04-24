@@ -34,8 +34,8 @@ To run our website, you need to make use of package managers.
 For the front-end (JS) is this NPM.
 The backend uses composer (PHP)
 
-- If you haven't installed NPM on your computer yet, please browse to: [install_npm](https://www.npmjs.com/get-npm)
-- If you haven't installed composer on your computer yet, please browse to: [install_composer](https://getcomposer.org/download/)
+- If you haven't installed NPM on your computer yet, please browse to the [npm installation website](https://www.npmjs.com/get-npm)
+- If you haven't installed composer on your computer yet, please browse to the [composer installation website](https://getcomposer.org/download/)
 
 You can install the dependencies, executing the following commands in the command line:
 
@@ -78,8 +78,8 @@ If you ever wish to connect to another backend, with a different hostname then '
 
 ## Mentors
 - [Sille Van Landschoot](https://github.com/sillevl)
-- [Piet Cordemans](http://github.com/pcordemans)
+- [Piet Cordemans](https://github.com/pcordemans)
 
 ## Movie
 
-To presentate Waitsmart, we have made a short introduction movie: [Waitsmart](https://www.youtube.com/watch?v=LTp_kHYZK6w)
+To presentate Waitsmart, we have made a short introduction movie [on YouTube](https://www.youtube.com/watch?v=LTp_kHYZK6w)

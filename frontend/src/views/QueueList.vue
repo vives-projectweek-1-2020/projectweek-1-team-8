@@ -1,5 +1,6 @@
 <template>
   <div id="queueList">
+    <Navigation />
     <table id='queue-list' align='center'>
       <tr> <th>username</th> <th>number</th> </tr>
       <tr v-for="row in title.data" v-bind:key="row" v-bind:value="row.value">
@@ -11,10 +12,13 @@
 
 <script>
 import axios from 'axios'
-import { mapGetters } from 'vuex'
+import Navigation from '@/components/Navigation.vue'
 
 export default {
   name: 'Queue',
+  components: {
+    Navigation
+  },
   data: () => ({
     title: 'test'
   }),
@@ -34,12 +38,6 @@ export default {
         .get('queue/getQueue/'.concat(4))
         .then(response => (this.title = response))
     }
-  },
-  computed: {
-    ...mapGetters({
-      authenticated: 'auth/authenticated',
-      user: 'auth/user'
-    })
   }
 }
 </script>

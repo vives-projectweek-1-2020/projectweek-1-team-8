@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Shop;
 use Illuminate\Http\Request;
 
@@ -15,6 +16,17 @@ class shopController extends Controller
     public function index()
     {
         return Shop::all();
+    }
+
+    public function GetBusinessTypes() {
+        return DB::select('SELECT typebussiness FROM shops GROUP BY typebussiness');
+    }
+
+    public function GetBusinesses($type, $city) {
+        return DB::select(
+            'SELECT name FROM shops 
+            JOIN address ON shops.address_id = address.id 
+            WHERE typebussiness = \'' . $type . '\' AND address.city = \'' . $city . '\'');
     }
 
     /**

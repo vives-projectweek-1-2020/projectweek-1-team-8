@@ -69,6 +69,32 @@ export default {
 </script>
 
 <style scoped>
+#app {	
+  background: lightgray;	
+}	
+input, option,#city,#business{	
+  padding: 5px;	
+}	
+input{	
+  margin: 20px 0px 20px 0px;	
+}	
+hr{	
+  border-top: solid darkgray 1px;	
+  margin-top: -10px;	
+  width: 16%;	
+}	
+#long-hr {	
+  width: 35%;	
+}	
+#short-hr {	
+  width: 12%;	
+}	
+#timestamp.datetime-picker{	
+  margin: auto;	
+}	
+.calender-div[data-v-4bd11526]{	
+  top: -300px;
+}
 button {
     background: linear-gradient(to right, #6065D9, #17D7FA);
     color: white;

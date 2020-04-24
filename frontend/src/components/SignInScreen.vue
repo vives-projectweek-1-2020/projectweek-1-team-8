@@ -72,16 +72,10 @@ export default {
 }
 
 input {
-<<<<<<< HEAD
-    border: 1px solid gray;
-    padding: 5px 10px;
-    width: 50%;
-=======
   border: 1px solid gray;
   padding: 8px 16px;
   width: 75%;
   max-width: 180px;
->>>>>>> arnobaecke
 }
 
 button {

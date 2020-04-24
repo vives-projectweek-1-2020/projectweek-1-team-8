@@ -1,43 +1,48 @@
 <template>
-        <ul class="navbar">
-            <li>
-                Hello, {{ user.name }}
-              </li>
-            <li>
-                <router-link :to="{ name: 'home' }" >
-                    Home
-                </router-link>
-            </li>
-            <template v-if="authenticated">
-              <li>
-                <router-link :to="{ name: 'dashboard' }" >
-                    Dashboard
-                </router-link>
-              </li>
-              <li>
-                <router-link :to="{ name: 'queueList' }" >
-                    Queue
-                </router-link>
-              </li>
-              <li>
-                <a href= "#" @click.prevent="signOut">
-                    Sign out
-                </a>
-              </li>
-            </template>
-            <template v-else>
-              <li>
-                <router-link :to="{ name: 'signin' }" >
-                  Sign in
-                </router-link>
-              </li>
-              <li>
-                <router-link :to="{ name: 'register' }" >
-                  Register
-                </router-link>
-              </li>
-            </template>
-        </ul>
+  <ul class="navbar">
+    <template v-if="authenticated">
+      <li>
+          Welcome {{ user.name }}
+      </li>
+      <li>
+        <router-link :to="{ name: 'home' }" >
+            Home
+        </router-link>
+      </li>
+      <li>
+      <router-link :to="{ name: 'dashboard' }" >
+            Dashboard {{ user.name }}
+          </router-link>
+      </li>
+      <li>
+      <router-link :to="{ name: 'queueList' }" >
+        Queue
+      </router-link>
+      </li>
+      <li>
+          <a href= "#" @click.prevent="signOut">
+              Sign out
+          </a>
+      </li>
+    </template>
+    <template v-else>
+      <li>
+        <router-link :to="{ name: 'home' }" >
+            Home
+        </router-link>
+    </li>
+      <li>
+        <router-link :to="{ name: 'signin' }" >
+          Sign in
+        </router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'register' }" >
+          Register
+        </router-link>
+      </li>
+    </template>
+  </ul>
 </template>
 
 <script>

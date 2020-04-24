@@ -4,17 +4,11 @@
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
     <hr>
-    <form action="#" @submit.prevent="Test2">
-        <button type="submit">Show businesses</button>
-    </form>
     <select id="business">
       <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
     </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
-      <form action="#" @submit.prevent="Test1">
-        <button type="submit">Show cities</button>
-      </form>
       <select id="city">
         <option v-for="(city, idx) in cities" :key="idx">{{city.city}}</option>
       </select>
@@ -48,10 +42,11 @@ export default {
   },
   created: function () {
     this.loadShops()
+    this.loadCities()
   },
   methods: {
-    async Test1 () {
-      await axios.get('address/getCities')
+    async loadCities () {
+      await axios.get('address/get-cities')
         .then(({ data }) => {
           this.cities = data
         })
@@ -67,6 +62,32 @@ export default {
 </script>
 
 <style scoped>
+#app {
+  background: lightgray;
+}
+input, option,#city,#business{
+  padding: 5px;
+}
+input{
+  margin: 20px 0px 20px 0px;
+}
+hr{
+  border-top: solid darkgray 1px;
+  margin-top: -10px;
+  width: 16%;
+}
+#long-hr {
+  width: 35%;
+}
+#short-hr {
+  width: 12%;
+}
+#timestamp.datetime-picker{
+  margin: auto;
+}
+.calender-div[data-v-4bd11526]{
+  top: -300px;
+}
 button {
     background: linear-gradient(to right, #6065D9, #17D7FA);
     color: white;

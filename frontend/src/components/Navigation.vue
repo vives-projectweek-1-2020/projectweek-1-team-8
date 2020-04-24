@@ -2,9 +2,6 @@
   <ul class="navbar">
     <template v-if="authenticated">
       <li>
-          Welcome {{ user.name }}
-      </li>
-      <li>
         <router-link :to="{ name: 'home' }" >
             Home
         </router-link>

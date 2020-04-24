@@ -31,6 +31,11 @@
           Register
         </router-link>
       </li>
+        <li>
+        <router-link :to="{ name: 'About' }" >
+          About us
+        </router-link>
+      </li>
     </template>
   </ul>
 </template>

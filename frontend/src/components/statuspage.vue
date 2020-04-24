@@ -95,14 +95,14 @@ hr{
 .calender-div[data-v-4bd11526]{
   top: -300px;
 }
-button {
-    background: linear-gradient(to right, #6065D9, #17D7FA);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
+button{
+  background: linear-gradient(to right, #6065D9, #17D7FA);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
 }
 .statuspage{
   background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);

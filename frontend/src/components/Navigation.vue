@@ -8,7 +8,7 @@
     <template v-if="authenticated">
       <li>
       <router-link :to="{ name: 'dashboard' }" >
-            Dashboard ({{ user.name }})
+            Dashboard ({{ user.firstname }})
           </router-link>
       </li>
       <router-link :to="{ name: 'queueList' }" >

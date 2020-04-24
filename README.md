@@ -56,7 +56,7 @@ Now you can fill in the different parameters that are needed for the db-connecti
 
 You can start a development server with this commands:
 
-- in the backend-folde:
+- in the backend-folder:
 ```powershell
 php artisan serve
 ```

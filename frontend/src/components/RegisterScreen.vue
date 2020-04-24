@@ -21,6 +21,10 @@
             <p>Email</p>
             <input v-model="form.email" type="email" placeholder="Please enter your email." />
           </div>
+          <div id="passworduser">
+            <p>Password</p>
+            <input v-model="form.passworduser" type="passworduser" placeholder="Please enter your password." />
+          </div>
           <br><br>
         </form>
       </div>
@@ -39,7 +43,8 @@ export default {
         password: '',
         firstname: '',
         lastname: '',
-        age: ''
+        age: '',
+        passworduser: ''
       }
     }
   },

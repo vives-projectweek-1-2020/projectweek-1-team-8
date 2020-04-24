@@ -17,7 +17,7 @@
         If this problem keeps occuring, please contact the site administrator.
       </p>
       <br><br>
-      <p>Don't have a waitsmart account yet?</p><a href="/Register">Register now</a>
+      <p>Don't have a Waitsmart account yet?</p><a href="/Register">Register now</a>
     </form>
   </div>
 </div>
@@ -68,6 +68,7 @@ export default {
 input {
     border: 1px solid gray;
     padding: 5px 10px;
+    width: 50%;
 }
 
 button {

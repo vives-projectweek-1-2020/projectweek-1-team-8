@@ -21,7 +21,7 @@ Route::apiResources([
     'user' => 'UserController',
 ]);
 
-Route::get('/queue/get-Queue/{shopId}', ['uses' =>'QueueController@GetList']);
+Route::get('/queue/get-queue/{shopId}', ['uses' =>'QueueController@GetList']);
 Route::get('/address/get-cities', 'AddressController@GetCities');
 Route::get('/shops/get-business-types', 'shopController@GetBusinessTypes');
-Route::get('/shops/get-business-names', 'shopController@GetBusinesses');
+Route::get('/shops/get-business-names/{type}/{city}', ['uses' => 'shopController@GetBusinesses']);

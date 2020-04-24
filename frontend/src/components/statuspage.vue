@@ -4,17 +4,17 @@
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
     <hr>
-    <select id="business">
-      <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
+    <select id="business" @change="loadbusinesnames($event)">
+      <option   v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
     </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
-      <select id="city">
+      <select id="city" @change="loadbusinesnames($event)">
         <option v-for="(city, idx) in cities" :key="idx">{{city.city}}</option>
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
     <select multiple id="specificoptions">
-      <option v-for="row in title.data" v-bind:key="row" v-bind:value="row.value">{{row.name}}</option>
+      <option v-for="(row, idx) in title" :key="idx" v-bind:value="row.value">{{row.name}}</option>
       </select>
       <h3>Select date and time:</h3>
       <hr>
@@ -28,7 +28,6 @@
 <script>
 import Datepicker from 'vuejs-datetimepicker'
 import axios from 'axios'
-
 export default {
   name: 'statuspage',
   components: {
@@ -38,31 +37,44 @@ export default {
     return {
       businesses: [],
       cities: [],
-      title: []
+      title: [],
+      type: '',
+      city: ''
     }
   },
   created: function () {
-    this.loadcities()
-    this.loadbusinesses()
-    this.loadbusinesnames()
+    this.loadAll()
   },
   methods: {
-    async loadcities () {
-      await axios.get('address/get-cities')
+    async loadAll () {
+      await Promise.all([
+        this.loadbusinesses(),
+        this.loadcities(),
+        this.loadbusinesnames()])
+    },
+    loadcities () {
+      return axios.get('address/get-cities')
         .then(({ data }) => {
           this.cities = data
         })
     },
-    async loadbusinesses () {
-      await axios.get('shops/get-business-types')
+    loadbusinesses () {
+      return axios.get('shops/get-business-types')
         .then(({ data }) => {
           this.businesses = data
         })
     },
-    async loadbusinesnames () {
-      await axios
-        .get('/shops/get-business-names')
-        .then(response => (this.title = response))
+    loadbusinesnames () {
+      const e = document.getElementById('business')
+      this.type = e.options[e.selectedIndex].text
+      const e2 = document.getElementById('city')
+      this.city = e2.options[e2.selectedIndex].text
+
+      console.log('/shops/get-business-names/' + this.type + '/' + this.city)
+      return axios.get('/shops/get-business-names/' + this.type + '/' + this.city)
+        .then(({ data }) => {
+          this.title = data
+        })
     }
   }
 }

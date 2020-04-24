@@ -22,11 +22,11 @@ class shopController extends Controller
         return DB::select('SELECT typebussiness FROM shops GROUP BY typebussiness');
     }
 
-    public function GetBusinesses() {
+    public function GetBusinesses($type, $city) {
         return DB::select(
-            'SELECT * FROM shops 
-            JOIN address ON shops.address_id = address.id'
-        );
+            'SELECT name FROM shops 
+            JOIN address ON shops.address_id = address.id 
+            WHERE typebussiness = \'' . $type . '\' AND address.city = \'' . $city . '\'');
     }
 
     /**

@@ -30,7 +30,7 @@ export default {
   methods: {
     loadQueue () {
       axios
-        .get('queue/getQueue/'.concat(4))
+        .get('/queue/get-queue/'.concat(4))
         .then(response => (this.title = response))
     }
   }

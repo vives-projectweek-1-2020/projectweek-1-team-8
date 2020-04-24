@@ -21,9 +21,9 @@
             <p>Email</p>
             <input v-model="form.email" type="email" placeholder="Please enter your email." />
           </div>
-          <div id="passworduser">
+          <div id="password">
             <p>Password</p>
-            <input v-model="form.passworduser" type="passworduser" placeholder="Please enter your password." />
+            <input v-model="form.password" type="password" placeholder="Please enter your password." />
           </div>
           <br><br>
           <button type="submit">Register</button>
@@ -47,12 +47,11 @@ export default {
   data () {
     return {
       form: {
-        email: '',
-        password: '',
         firstname: '',
         lastname: '',
         age: '',
-        passworduser: ''
+        email: '',
+        password: ''
       },
       showAlert: false,
       showNotice: false
@@ -60,12 +59,14 @@ export default {
   },
   methods: {
     ...mapActions({
-      signIn: 'auth/signIn'
+      registerAction: 'auth/register'
     }),
-    SignIn () {
-      this.signIn(this.form).then(() => {
+    Register () {
+      this.showNotice = true
+      this.showAlert = false
+      this.registerAction(this.form).then(() => {
         this.$router.replace({
-          name: 'dashboard'
+          name: 'signin'
         })
       }).catch(() => {
         this.showNotice = false
@@ -100,7 +101,7 @@ outline: none;
 cursor: pointer;
 }
 
-.signin-box img {
+.register-box img {
   max-width: 80%;
 }
 

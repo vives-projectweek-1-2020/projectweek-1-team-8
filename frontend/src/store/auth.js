@@ -44,7 +44,7 @@ export default {
       }
 
       try {
-        const response = await axios.get('api/auth/me') // header from subscriber
+        const response = await axios.get('api/auth/me') // header in subscriber
 
         // Store the information of the response
         commit('SET_USER', response.data)
@@ -60,6 +60,13 @@ export default {
         commit('SET_TOKEN', null)
         commit('SET_USER', null)
       })
+    },
+
+    async register ({ commit }, userData) {
+      await axios.post('api/auth/register', userData)
+      commit('SET_TOKEN', null)
+      commit('SET_USER', null)
+      alert("Your account is successfully created. You'll be redirected to the login screen now.")
     }
   }
 }

@@ -1,10 +1,12 @@
 <template>
     <div class="homescreen">
-        <img id="logo" src="@/assets/logo.png"/> <br><br>
-        <div class="banner">
-            <h2>Prevent long queques</h2>
-            <p>With a few clicks in our app can you make a digital <br> reservation to a bussiness you select.
-            So you dont lose time waiting in a long queque.</p>
+        <div class="left">
+                <img id="logo" src="@/assets/logo.png"/>
+                <h2>Prevent long queques</h2>
+                <p>With a few clicks in our app can you make a digital <br> reservation to a bussiness you select.
+                <br>So you dont lose time waiting in a long queque.</p>
+                <p>If you want more information:</p>
+                <a href="/About">About us</a>
         </div>
     </div>
 </template>

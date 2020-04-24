@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   background: lightgray;
 }

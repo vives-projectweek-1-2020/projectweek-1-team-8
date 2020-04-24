@@ -16,7 +16,7 @@
           <h3>Start with it today!</h3>
       </div>
       <div>
-        <router-link :to="{ name: 'signin' }" >
+        <router-link :to="{ name: 'register' }" >
           <button>Register</button>
         </router-link>
       </div>

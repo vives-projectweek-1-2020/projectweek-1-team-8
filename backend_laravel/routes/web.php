@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 
 Route::apiResources([
-    'address' => 'AddressController',
+    'address' => 'QueueController',
     'user' => 'UserController',
     'shops' => 'ShopController'
 ]);
 
 Route::get('/queue/getQueue/{shopId}', ['uses' =>'QueueController@GetList']);
+Route::get('/address/foo', 'AddressController@getList');
+

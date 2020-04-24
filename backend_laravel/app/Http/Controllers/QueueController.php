@@ -19,7 +19,12 @@ class QueueController extends Controller
     }
 
     public function GetList($shopId) {
-        $queue = DB::select('SELECT users.firstname, queue.number FROM queue JOIN users ON queue.user_id = users.id JOIN shops ON queue.shop_id = shops.id WHERE shops.id = '.$shopId.' ORDER BY number');
+        $queue = DB::select(
+            'SELECT users.firstname, queue.number 
+            FROM queue JOIN users ON queue.user_id = users.id 
+            JOIN shops ON queue.shop_id = shops.id 
+            WHERE shops.id = '.$shopId.' ORDER BY number'
+        );
         return $queue;
     }
 

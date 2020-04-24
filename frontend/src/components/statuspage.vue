@@ -7,9 +7,9 @@
     <form action="#" @submit.prevent="Test2">
         <button type="submit">Show businesses</button>
     </form>
-      <select id="business">
-        <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
-      </select>
+    <select id="business">
+      <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
+    </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
       <form action="#" @submit.prevent="Test1">
@@ -20,19 +20,14 @@
       </select>
     <h3>Choose the right business where you wanna reservate:</h3>
     <select multiple id="specificoptions">
-      <option>A</option>
-      <option>B</option>
-      <option>C</option>
-      <option>D</option>
-      <option>E</option>
-      <option>F</option>
-      </select>
-      <h3>Select date and time:</h3>
-      <hr>
-      <label for="timestamp"></label>
-      <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
-      <br>
-      <input type="submit" value="Make reservation"/>
+      <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.name}}</option>
+    </select>
+    <h3>Select date and time:</h3>
+    <hr>
+    <label for="timestamp"></label>
+    <Datepicker type="datetime" id="timestamp" name="timestamp" format="YYYY-MM-DD H:i:s" width="20%"/>
+    <br>
+    <input type="submit" value="Make reservation"/>
   </div>
 </template>
 
@@ -51,15 +46,18 @@ export default {
       cities: []
     }
   },
+  created: function () {
+    this.loadShops()
+  },
   methods: {
     async Test1 () {
-      await axios.get('address')
+      await axios.get('address/getCities')
         .then(({ data }) => {
           this.cities = data
         })
     },
-    async Test2 () {
-      await axios.get('shops')
+    async loadShops () {
+      axios.get('shops')
         .then(({ data }) => {
           this.businesses = data
         })

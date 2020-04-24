@@ -1,6 +1,5 @@
 <template>
   <div id="queueList">
-    <Navigation />
     <table id='queue-list' align='center'>
       <tr> <th>username</th> <th>number</th> </tr>
       <tr v-for="row in title.data" v-bind:key="row" v-bind:value="row.value">
@@ -12,13 +11,9 @@
 
 <script>
 import axios from 'axios'
-import Navigation from '@/components/Navigation.vue'
 
 export default {
   name: 'Queue',
-  components: {
-    Navigation
-  },
   data: () => ({
     title: 'test'
   }),
@@ -58,7 +53,7 @@ export default {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid rgb(59, 133, 108);
     text-align: center;
     padding: 8px;
     background-color: none;

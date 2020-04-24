@@ -1,19 +1,24 @@
 <template>
   <ul class="navbar">
-    <li>
+    <template v-if="authenticated">
+      <li>
+          Welcome {{ user.name }}
+      </li>
+      <li>
         <router-link :to="{ name: 'home' }" >
             Home
         </router-link>
-    </li>
-    <template v-if="authenticated">
+      </li>
       <li>
       <router-link :to="{ name: 'dashboard' }" >
-            Dashboard ({{ user.name }})
+            Dashboard {{ user.name }}
           </router-link>
       </li>
+      <li>
       <router-link :to="{ name: 'queueList' }" >
         Queue
       </router-link>
+      </li>
       <li>
           <a href= "#" @click.prevent="signOut">
               Sign out
@@ -21,6 +26,11 @@
       </li>
     </template>
     <template v-else>
+      <li>
+        <router-link :to="{ name: 'home' }" >
+            Home
+        </router-link>
+    </li>
       <li>
         <router-link :to="{ name: 'signin' }" >
           Sign in
@@ -63,7 +73,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 .navbar {
   overflow: hidden;

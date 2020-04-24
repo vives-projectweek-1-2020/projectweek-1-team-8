@@ -4,9 +4,9 @@
     <h2>Fill in this form to select the right business:</h2>
     <h3>Choose your type business:</h3>
     <hr>
-      <select id="business">
-        <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
-      </select>
+    <select id="business">
+      <option v-for="(business, idx) in businesses" :key="idx" v-bind:value="business.value">{{business.typebussiness}}</option>
+    </select>
     <h3>Choose your city:</h3>
       <hr id="short-hr">
       <select id="city">

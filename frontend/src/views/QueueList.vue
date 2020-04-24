@@ -11,7 +11,6 @@
 
 <script>
 import axios from 'axios'
-import { mapGetters } from 'vuex'
 
 export default {
   name: 'Queue',
@@ -34,12 +33,6 @@ export default {
         .get('queue/getQueue/'.concat(4))
         .then(response => (this.title = response))
     }
-  },
-  computed: {
-    ...mapGetters({
-      authenticated: 'auth/authenticated',
-      user: 'auth/user'
-    })
   }
 }
 </script>
@@ -60,7 +53,7 @@ export default {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid rgb(59, 133, 108);
     text-align: center;
     padding: 8px;
     background-color: none;

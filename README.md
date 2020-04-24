@@ -66,4 +66,4 @@ Normally, your back-end will run on the localhost:8000 an your front-end wil run
 
 ## Movie
 
-To presentate Waitsmart, we have made a short introduction movie: [Waitsmart]()
+To presentate Waitsmart, we have made a short introduction movie: [Waitsmart](https://www.youtube.com/watch?v=LTp_kHYZK6w)

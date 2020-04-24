@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 button {
     background: linear-gradient(to right, #6065D9, #17D7FA);
     color: white;

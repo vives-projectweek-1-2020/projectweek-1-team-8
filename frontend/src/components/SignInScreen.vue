@@ -27,6 +27,7 @@
 import { mapActions } from 'vuex'
 
 export default {
+  name: 'SignInScreen',
   data () {
     return {
       form: {

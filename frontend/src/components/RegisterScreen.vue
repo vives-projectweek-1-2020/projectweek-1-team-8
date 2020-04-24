@@ -1,5 +1,5 @@
 <template>
-<div class="create-user">
+<div class="register-box">
       <img alt="WAITSMART" src="../assets/logo.png"/>
       <h2>Register</h2>
       <hr>
@@ -26,9 +26,17 @@
             <input v-model="form.passworduser" type="passworduser" placeholder="Please enter your password." />
           </div>
           <br><br>
+          <button type="submit">Register</button>
         </form>
+        <p class="message" id="alert" v-if="showAlert">
+          Something went wrong. Please try again later.
+          <br>
+          If this problem keeps occuring, please contact the site administrator.
+        </p>
+        <p class="message" id="notice" v-if="showNotice">
+        We're creating your account...
+        </p>
       </div>
-      <button type="submit">Register</button>
 </div>
 </template>
 
@@ -45,7 +53,9 @@ export default {
         lastname: '',
         age: '',
         passworduser: ''
-      }
+      },
+      showAlert: false,
+      showNotice: false
     }
   },
   methods: {
@@ -58,7 +68,8 @@ export default {
           name: 'dashboard'
         })
       }).catch(() => {
-        alert('Wrong credentials. Please try again.')
+        this.showNotice = false
+        this.showAlert = true
       })
     }
   }
@@ -67,30 +78,49 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.register-box {
+  background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
+  padding: 80px 10px;
+}
+
 input {
-    border: 1px solid gray;
-    padding: 5px 10px;
-    width: 50%;
+  border: 1px solid gray;
+  padding: 8px 16px;
+  width: 75%;
+  max-width: 180px;
 }
 
 button {
-    background: linear-gradient(to right, #6065D9, #17D7FA);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
+background: linear-gradient(to right, #6065D9, #17D7FA);
+color: white;
+border: none;
+border-radius: 50px;
+padding: 10px 20px;
+outline: none;
+cursor: pointer;
 }
 
-.create-user {
-    width: 30%;
-    min-width: 240px;
-    background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
-    padding: 80px 10px;
-    margin: 20px;
+.signin-box img {
+  max-width: 80%;
 }
+
+.message {
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 16px 0px;
+}
+
+#notice {
+  background-color: #bee5eb;
+  color: #0c5460;
+}
+
+#alert {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
 hr {
-    width: 80%;
+  width: 80%;
 }
 </style>

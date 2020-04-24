@@ -83,6 +83,7 @@ export default {
 .navbar a {
   color: white;
   text-decoration: none;
+  padding: 20px 0px;
 }
 
 .router-link-exact-active {

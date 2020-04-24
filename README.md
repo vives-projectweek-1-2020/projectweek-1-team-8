@@ -23,7 +23,7 @@ some important variables:
 - Who has priority
 - How many times a person visited a shop (to derermine priority)
 
-## tools
+## Tools
 - Database: mySQL
 - Back-end: PHP
 - Front-end: Vue
@@ -31,7 +31,7 @@ some important variables:
 ## Instalation guide
 To run our website, you need to have some tools. This tools are composer (for back-end) and npm (for front-end). 
 
-- To install composer on computer browse to: [install_composer](https://getcomposer.org/download/)
+- If you haven't installed composer on your computer yet, please browse to: [install_composer](https://getcomposer.org/download/)
 
 You can install npm and composer by executing the following commands in the command line:
 

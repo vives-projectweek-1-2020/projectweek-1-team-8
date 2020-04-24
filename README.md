@@ -8,8 +8,7 @@ People can wait at home until it is their turn in line. This prevents long queue
 
 The shop accepts visitors until it has reached the maximum allowed visitors (can be 1).
 The amount of visitors will be live updated on the app/website. If possible, there will be a display outside too.
-the business owner can control the flow in his business via the same app.
-
+the business owner can control the flow in his business on the same app.
 
 ## Technical details
 With a (web) application, we can give users access to the queue. A digital column at the entrance can also show the current status.

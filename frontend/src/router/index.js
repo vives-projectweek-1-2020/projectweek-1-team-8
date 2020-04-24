@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Queue from '../views/Queue.vue'
+import QueueList from '../views/QueueList.vue'
 import SignIn from '../views/SignIn.vue'
 import Register from '../views/Register.vue'
 import store from '@/store'
@@ -29,6 +30,11 @@ const routes = [
     path: '/queue',
     name: 'queue',
     component: Queue
+  },
+  {
+    path: '/queueList',
+    name: 'queueList',
+    component: QueueList
   },
   {
     path: '/dashboard',

@@ -12,7 +12,25 @@
 </template>
 
 <style>
-.left{
-    background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
+button {
+    background: linear-gradient(to right, #6065D9, #17D7FA);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+}
+.homescreen{
+  background-image: linear-gradient(253deg,#3ba5b4 0,#38ba8a 100%);
+    margin: 20px;
+    width: 30%;
+    min-width: 240px;
+    padding: 80px 10px;
+}
+#logo{
+    width: 50%;
+    float: center;
+
 }
 </style>

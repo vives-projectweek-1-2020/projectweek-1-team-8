@@ -16,12 +16,10 @@ class RegisterController extends Controller
             [
                 'firstname' => $request->firstname,
                 'lastname' => $request->lastname,
+                'age' => $request->age,
                 'email' => $request->email,
                 'password' => bcrypt($request->password),
-                'birthdate' => $request->birthdate,
-                'address_id' => $request->address_id
             ]
         );
-        return time();
     }
 }

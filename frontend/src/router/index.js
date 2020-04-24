@@ -18,7 +18,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
+    path: '/About',
     name: 'About',
     component: About
     // route level code-splitting
@@ -46,7 +46,6 @@ const routes = [
           name: 'signin'
         })
       }
-
       next()
     }
   },
@@ -58,7 +57,15 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: Register,
+    beforeEnter: (to, from, next) => {
+      if (store.getters['auth/authenticated']) {
+        return next({
+          name: 'dashboard'
+        })
+      }
+      next()
+    }
   }
 ]
 

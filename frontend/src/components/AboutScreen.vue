@@ -13,5 +13,9 @@
 </template>
 
 <style>
-
+.aboutscreen {
+    .about {
+  background: url('../assets/about.png') no-repeat;
+}
+}
 </style>

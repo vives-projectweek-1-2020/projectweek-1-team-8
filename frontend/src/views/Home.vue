@@ -33,7 +33,8 @@
         The business owner can control the flow in his business on the same app.
       </p>
       <b>
-        More info coming soon
+      More information can be found at:<br><br>
+      <a href="/About">About us</a>
       </b>
     </section>
   </div>

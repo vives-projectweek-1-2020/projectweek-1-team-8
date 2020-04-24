@@ -1,6 +1,6 @@
 <template>
   <div class="signin">
-    <SignInScreen id="signinbox" />
+      <SignInScreen id="signinbox" />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 <style scoped>
 div.signin {
   height: calc(100vh - 60px);
-  background-image: url('../assets/login-background.jpg');
+  background: url('../assets/login-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
